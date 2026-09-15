@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Bites | College Canteen</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-utensils"></i> Campus<span>Bites</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#specials">Specials</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Fresh & Delicious Food <br>Right on Campus!</h1>
+            <p>Skip the long queues. Check out today's menu, grab your favorite snacks, and fuel up for your lectures.</p>
+            <a href="#menu" class="btn-primary">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- Daily Specials Banner -->
+    <section id="specials" class="specials">
+        <div class="container">
+            <h2>Today's Special Combos</h2>
+            <div class="specials-grid">
+                <div class="special-card">
+                    <div class="badge">Hot Deal</div>
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80" alt="Burger Combo">
+                    <h3>The Scholar Burger Combo</h3>
+                    <p>Cheese Burger + Crispy Fries + Cold Beverage</p>
+                    <span class="price">₹120</span>
+                    <button class="btn-add">Add to Cart</button>
+                </div>
+                <div class="special-card">
+                    <div class="badge">Chef's Choice</div>
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=500&q=80" alt="South Indian Thali">
+                    <h3>South Indian Mini Meal</h3>
+                    <p>2 Masala Dosas + Filter Coffee</p>
+                    <span class="price">₹90</span>
+                    <button class="btn-add">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Our Canteen Menu</h2>
+            
+            <!-- Category Tabs / Filter Buttons -->
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All Items</button>
+                <button class="filter-btn" data-filter="snacks">Snacks</button>
+                <button class="filter-btn" data-filter="meals">Meals</button>
+                <button class="filter-btn" data-filter="beverages">Beverages</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid">
+                <!-- Item 1 -->
+                <div class="menu-item" data-category="snacks">
+                    <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=400&q=80" alt="Samosa">
+                    <div class="item-details">
+                        <h4>Crispy Samosa (2 pcs)</h4>
+                        <p>Served with tangy mint & tamarind chutney.</p>
+                        <div class="item-footer">
+                            <span class="price">₹30</span>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="menu-item" data-category="meals">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80" alt="Veg Thali">
+                    <div class="item-details">
+                        <h4>Standard Veg Thali</h4>
+                        <p>Roti, Dal, Rice, 2 Sabzi, Curd & Salad.</p>
+                        <div class="item-footer">
+                            <span class="price">₹100</span>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="menu-item" data-category="beverages">
+                    <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=400&q=80" alt="Cold Coffee">
+                    <div class="item-details">
+                        <h4>Classic Cold Coffee</h4>
+                        <p>Rich blended coffee topped with chocolate syrup.</p>
+                        <div class="item-footer">
+                            <span class="price">₹60</span>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="menu-item" data-category="snacks">
+                    <img src="https://images.unsplash.com/photo-1619881591783-9b375b6cd199?auto=format&fit=crop&w=400&q=80" alt="Maggi">
+                    <div class="item-details">
+                        <h4>Cheese Masala Maggi</h4>
+                        <p>Everyone's favorite comfort food loaded with cheese.</p>
+                        <div class="item-footer">
+                            <span class="price">₹50</span>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="menu-item" data-category="beverages">
+                    <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=400&q=80" alt="Tea">
+                    <div class="item-details">
+                        <h4>Campus Special Chai</h4>
+                        <p>Hot, aromatic ginger & cardamom tea.</p>
+                        <div class="item-footer">
+                            <span class="price">₹15</span>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="menu-item" data-category="meals">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=400&q=80" alt="Sandwich">
+                    <div class="item-details">
+                        <h4>Grilled Veg Sandwich</h4>
+                        <p>Loaded with veggies, cheese, and green spread.</p>
+                        <div class="item-footer">
+                            <span class="price">₹70</span>
+                            <button class="btn-add">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Canteen Section -->
+    <section id="about" class="about">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2>About Campus Bites</h2>
+                <p>We pride ourselves on providing hygienic, delicious, and pocket-friendly meals for students and faculty members. Whether you need a quick caffeine boost between classes or a hearty lunch after exams, Campus Bites is your go-to spot on campus.</p>
+                <div class="features">
+                    <div><i class="fa-solid fa-shield-halved"></i> 100% Hygienic</div>
+                    <div><i class="fa-solid fa-wallet"></i> Student Friendly Prices</div>
+                    <div><i class="fa-solid fa-bolt"></i> Fast Service</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Campus Bites Canteen</h3>
+                <p>Location: Ground Floor, Main Student Activity Center</p>
+                <p>Timing: 8:00 AM – 8:00 PM (Mon - Sat)</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#specials">Specials</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Campus Bites Canteen. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
